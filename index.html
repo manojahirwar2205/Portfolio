@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>portfolio</title>
+	<script  src="https://kit.fontawesome.com/b4f93f326e.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+		*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 1.4);
+}
+.main{
+	width: 100%;
+	height: 50px;
+	background:rgba(202, 103, 503, 1.4);
+	
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+
+}
+nav ul{
+	display: flex;
+	list-style: none;
+}
+nav ul li{
+	margin: 10px 30px;
+}
+nav a{
+	text-decoration: none;
+	padding: 10px;
+	color: pink;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+nav a:hover{
+	background-color: pink;
+	color: white;
+	transition: all 1s;
+	padding: 10px;
+	border-radius:8px ;
+}
+.menu-bars i{
+	display:none ;
+	color: white;
+}
+#click:checked ~ ul{
+	left: 0%;
+
+}
+
+nav input{
+	display:none ;
+}
+.logo{
+	width: 20%;
+	height: auto;
+	padding: 10px;
+}
+.logo > h1{
+	font-weight: bold;
+	letter-spacing: 10px;
+	color: white;
+	font-family: sans-serif;
+
+}
+.move{
+	width: 40px;
+	height: 40px;
+	background: url("https://i.postimg.cc/59m5LWq8/IMG-20230226-082815-630.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	animation: move 2s infinite linear;
+	border-radius: 60px;
+}
+@keyframes move{
+	0%{
+		transform: scale3d(0.0, 0.0, 0.0);
+	}
+	100%{
+		transform: scale3d(1.3, 1.3, 1.3);
+	}
+}
+
+.fornt{
+	width: 100%;
+	height: 400px;
+	gap: 10px;
+	margin: 10px 0px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.info{
+	width: 45%;
+	height: 380px;
+}
+.info > h1,h2,h3{
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: bold;
+	margin: 7px 0px;
+	padding: 20px;
+	color: white;
+} 
+.info >button {
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	border-radius: 10px;
+	font-weight: bold;
+	background-color: orange;
+}
+.image{
+	width: 350px;
+	box-shadow: 10px 10px 30px white;
+	height: 350px;
+	margin-bottom: 15px ;
+	border-radius: 350px;
+	
+}
+.image >img{
+	width: 100%;
+	background: radial-gradient(blue,yellow,orange,green);
+	padding: 5px;
+	border-radius: 350px;
+	height: 350px;
+
+}
+.info > h3{
+	animation: lett 2s infinite linear;
+}
+@keyframes lett {
+	0%{
+		transform: scale3d(0.0, 0.0, 0.0);
+	}
+	100%{
+		transform: scale3d(1.6, 1.6, 1.6);
+	}
+}
+.skill{
+	width: 100%;
+	height: auto;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+}
+.range{
+	width: 50%;
+	height: 420px;
+	padding: 10px;
+	overflow-y: auto;
+	border-radius: 10px;
+	color:rgb(90, 30, 1300);
+}
+.range::-webkit-scrollbar{
+	display: none;
+	width: 0%;
+}
+.range  input{
+	width: 100%;
+	color: yellow;
+}
+#submit{
+	background-color: orange;
+	color: white;
+	padding: 7px;
+}
+#submit:hover{
+	background-color:pink;
+	color: white;
+	transition: all 1s ;
+}
+.about{
+	width: 100%;
+	height: 400px;
+	display: flex;
+	gap: 10px;
+	justify-content: space-around;
+	align-items: center;
+}
+.information{
+	width: 50%;
+	height: 380px;
+}
+.information >p{
+	color: pink;
+	font-size: 17px;
+	font-weight: bold;
+	text-align: justify-alls;
+	font-weight: 30px;
+	line-height: 20px;
+}
+.pic{
+	width: 350px;
+	height: 350px;
+	box-shadow: 10px 10px 30px white;
+	border-radius: 350px;
+}
+
+.pic >img{
+	width: 100%;
+	background-color:blue;
+	padding: 5px;
+	border-radius: 350px;
+	height: 350px;
+
+}
+
+.project{
+	width: 80%;
+	height: auto;
+	margin: auto;
+	border:2px black solid;
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	
+}
+.project-items{
+	width: 40%;
+	border-radius: 8px;
+	box-shadow: 2px 2px 20px grey;
+	height: auto;
+
+	
+}
+.project-items > img{
+	width: 100%;
+	height: 200px;
+	padding: 10px;
+
+}
+.project-items > a button{
+	padding: 10px;
+	cursor: pointer;
+	font-weight: bold;
+	margin: 0px 10px;
+	border-radius: 7px;
+	background-color:blue ;
+}
+.project-items > a button:hover{
+	background-color: orange;
+	color: white;
+	transition: all 1s;
+}
+
+.servic{
+	width: 80%;
+	height: auto;
+	margin: auto;
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	
+}
+.servic-items{
+	width: 40%;
+	height: auto;
+	box-shadow: 2px 2px 20px grey;
+	border-radius: 8px;
+	
+}
+.servic-items > img{
+	width: 100%;
+	height: 200px;
+	padding: 10px;
+	
+}
+.servic-items > a button{
+	padding: 10px;
+	cursor: pointer;
+	font-weight: bold;
+	margin: 0px 10px;
+	border-radius: 7px;
+	background-color:blue ;
+}
+.servic-items >a button:hover{
+	background-color:orange;
+	color: white;
+	transition: all 1s;
+}
+
+.contact{
+	width: 100%;
+	height: 400px;
+	gap: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contact-one{
+	width: 50%;
+	height: 390px;
+	border-radius: 10px;
+
+}
+.contact-one >img{
+	width: 100%;
+	border-radius: 10px;
+	height: 385px;
+}
+.contact-two,input{
+	width: 100%;
+	font-weight: bold;
+	padding:5px;
+	border-radius: 10px;
+	margin: 5px 0px;
+
+}
+.contact-two{
+	width: 50%;
+	height: 390px;
+	color: white;
+	padding: 20px;
+}
+.last{
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+
+}
+.last span > a {
+	margin: 0px 30px;
+	font-size: 22px;
+} 
+.last > h1{
+	animation: haha 2s infinite linear;
+}
+@keyframes haha {
+	0%{
+		transform: rotateX(0deg);
+	}
+	100%{
+		transform: rotateY(200deg);
+	}
+}
+
+
+
+@media screen and (max-width:500px){
+	*{
+		margin: 0px;
+		padding: 0px;
+		box-sizing: border-box;
+	}
+	nav ul{
+		position: fixed;
+		top: 10%;
+		left: -100%;
+		background-color: black;
+		width: 100%;
+		height: 100vh;
+		justify-content: center;
+		display: block;
+		transition: all 1s;
+		align-items: center;
+		text-align: center;
+	}
+	#click:checked ~.menu-bars i:before{
+		content:"\f00d";
+		transition: all 1s;
+	} 
+	nav ul li{
+		color: white;
+		margin-top: 37px;
+
+	}
+
+	.menu-bars i{
+	display: block;
+	color: white;
+	margin: 0px 150px;
+}
+#click:checked ~ ul{
+	left: 0%;
+}
+nav input{
+	display:none;
+}
+.move{
+	margin: 0px 30px;
+
+}
+
+	.main{
+		width: 100%;
+		height: auto;
+		margin: 0px;
+		padding: 0px;
+		overflow: hidden;
+	}
+	.fornt{
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.info{
+		width: 100%;
+		height: auto;
+	}
+	.info >button{
+		height: auto;
+		width: 100%;
+	}
+	
+	.skill{
+		width: 100%;
+		height: auto;
+		margin: 0px;
+		padding: 0px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+
+	}
+	.about{
+		width: 100%;
+		height: auto;
+		display: flex;
+		margin: 0px;
+		padding: 0px;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	.information{
+		width: 100%;
+		height: auto;
+	}
+	.information >p{
+		width: 100%;
+		height: auto;
+		text-align: center;
+
+	}
+
+	.range{
+		width: 100%;
+		height: auto;
+		margin: 0px;
+		padding: 0px;
+
+	}
+	.project{
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+
+	}
+	.project-items{
+		width: 46%;
+		height: auto;
+
+	}
+	.servic{
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+
+	}
+	.servic-items{
+		width: 46%;
+		height: auto;
+
+	}
+	.contact{
+		width: 100%;
+		height: auto;
+		display: flex;
+		margin: 0px;
+		padding: 0px;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+
+	}
+	.logo{
+		margin: 0px 30px;
+		padding: 10px;
+	}
+	.contact-one{
+		width: 100%;
+		height: auto;
+		margin: 0px;
+		padding: 0px;
+	}
+	.contact-two{
+		width: 100%;
+		height: auto;
+		margin: 0px;
+		padding: 0px;
+	}
+}
+
+
+	</style>
+</head>
+<body>
+	<div class="main">
+		<nav>
+			<div class="move"></div>
+			<div class="logo"><h1>Portfolio</h1>
+			</div>
+
+			<input type="checkbox" id="click">
+			<label for = "click" class="menu-bars">
+				<i class="fas fa-bars"></i>
+			</label>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">AboutUs</a></li>
+				<li><a href="#skill">Skills</a></li>
+				<li><a href="#project">Projects</a></li>
+				<li><a href="#servic">Service</a></li>
+				<li><a href="#contact">ContactUs</a></li>
+			</ul>
+		</nav>
+		
+	</div>
+
+	<!------------------navbar------------>
+
+	<div class="fornt">
+		<div class="info">
+			<h1 style="color: yellow;">Hello......</h1>
+			<h2><span style="color: purple;">Good</span> Morning <span style="color:green;">EveryOne....</span></h2>
+			<h1><span style="color:green;">My self</span> <span style="color:yellow;">Manoj Ahirwar</span></h1>
+			<h3><span style="color: gold ;">Full</span> Stack <span style="color:yellow ;">Engineer</span></h3>
+			<button id="btn">DownloadCv</button>
+		</div>
+		<div class="image">
+			<img src="img/manoj.jpg">
+		</div>
+
+	</div>
+
+	<!-----------------fornt---------------------->
+	<h1 style="text-align: center; padding: 10px; color: white; font-family: sans-serif;font-weight: bold;" id="skill">Skills</h1>
+
+	<div class="skill">
+		<div class="range">
+			<h4>HTLM</h4></span><span><input type="range" name="range"><span><h4>100%</h4></span>
+
+			<h4>CSS</h4></span><span><input type="range" name="range"><span><h4>100%</h4></span>
+
+			<h4>JAVASCRIPT</h4></span><span><input type="range" name="range"><span><h4>90%</h4></span>
+
+			<h4>REACT</h4></span><span><input type="range" name="range"><span><h4>50%</h4></span>
+
+			<h4>NODE.JS</h4></span><span><input type="range" name="range"><span><h4>70%</h4></span>
+
+			<h4>EXPRESS.JS</h4></span><span><input type="range" name="range"><span><h4>60%</h4></span>
+
+			<h4>MONGODB</h4></span><span><input type="range" name="range"><span><h4>50%</h4></span>
+		</div>
+		<div class="range">
+			<img src="https://img.freepik.com/premium-photo/laptop-with-image-network-spreading-earth-honors-world-internet-day_986511-185.jpg?size=626&ext=jpg&ga=GA1.1.396037626.1696636800&semt=ais">
+		</div>
+	</div>
+	<!---------------skill------------------>
+
+	<h1 id="about" style="text-align: center; padding: 10px; color: white; font-family: sans-serif;font-weight: bold;" id="skill">AboutUs</h1>
+	<div class="about">
+		<div class="information">
+			<p>Hello, I'm Manoj Ahirwar, a passionate and dedicated individual with a strong background in full-stack development. Hailing from the vibrant city of Ballia in Uttar Pradesh, I've embarked on a journey in the world of technology and web development that has been nothing short of exhilarating.
+
+My fascination with technology and coding began at an early age, and it led me to pursue a full-stack -development course, where I honed my skills in both front-end and back-end technologies. Throughout this journey, I've acquired a deep understanding of web development frameworks, programming languages, and deployment strategies that have allowed me to create robust and user-friendly web applications.
+
+One of my key strengths lies in my ability to bridge the gap between design and functionality. I'm passionate about creating visually appealing, responsive, and interactive websites that not only meet but exceed user expectations. Whether it's crafting elegant user interfaces with HTML, CSS, and JavaScript or building scalable server-side solutions with technologies like Node.js and MongoDB, I thrive on turning ideas into digital realities.
+
+I believe in the power of continuous learning, and I'm always eager to stay updated with the latest trends and technologies in the ever-evolving field of web development. This commitment to growth ensures that my skill set remains at the cutting edge, enabling me to deliver innovative solutions to complex problems.
+</p>
+		</div>
+		<div class="pic">
+			<img src="img/manoj 1.jpg">
+		</div>
+	</div>
+
+	<!---------PROJECT------------------>
+<h1 id="project" style="text-align: center; padding: 10px; color: white; font-family: sans-serif;font-weight: bold;" id="skill">Projects</h1>
+	<div class="project">
+		
+		<div class="project-items">
+		<img src="https://kantata.marketing/wp-content/uploads/2021/08/project-managemenr-goals.jpg">
+		<h3 style="text-align:center; color:white;">Project 1</h3>
+		<hr>
+	   <a href=""><button>View</button></a>
+		<a href="https://github.com/manojahirwar2205/LinkedInProject01"><button>Github</button></a>
+		</div>
+
+		<div class="project-items">
+			<img src="https://i.ytimg.com/vi/AZsUzHeETFY/maxresdefault.jpg">
+			<h3 style="text-align:center; color:white;">Project 2</h3>
+		<hr>
+		<a href=""><button>View</button></a>
+		<a href="https://github.com/manojahirwar2205/Quiz-app"><button>Github</button></a>
+		</div>
+
+		<div class="project-items">
+			<img src="https://cee.iba.edu.pk/images/mastering-project-management.jpg">
+			<h3 style="text-align:center; color:white;">Project 3</h3>
+		<hr>
+		<a href=""><button>View</button></a>
+		<a href="https://github.com/manojahirwar2205/Hackathon-1.0"><button>Github</button></a>
+		</div>
+
+		<div class="project-items">
+		<img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/What_is_Project_Cycle_Management.jpg">
+		<h3 style="text-align:center; color:white;">Project 4</h3>
+		<hr>
+		<a href=""><button>View</button></a>
+		<a href="https://github.com/manojahirwar2205/Stopwatch"><button>Github</button></a>
+		</div>
+	</div>
+
+	<!------------------Project------------------->
+
+    <!-----------service------
+        
+<h1 id="servic" style="text-align: center; padding: 10px; color: white; font-family: sans-serif;font-weight: bold;" id="skill">Service</h1>
+
+	<div class="servic">
+		<div class="servic-items">
+			<img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c8e34f99766893.5efa32f305079.png">
+			<h3 style="text-align:center; color:white;">Front end dev</h3>
+		<hr>
+	   <a href=""><button>View</button></a>
+		<a href="https://github.com/Abhishekprajapati0/study-toturials"><button>Github</button></a>
+		</div>
+		<div class="servic-items">
+			<img src="https://media.licdn.com/dms/image/D4D12AQGhCg6ADbFltQ/article-cover_image-shrink_720_1280/0/1680587774886?e=2147483647&v=beta&t=o_W9UM1I7HtQcqgPWK75GzSKEc285ak3vMZA07vaj1E">
+			<h3 style="text-align:center; color:white;">Back end dev</h3>
+		<hr>
+	   <a href=""><button>View</button></a>
+		<a href="https://github.com/Abhishekprajapati0/Learn---Code"><button>Github</button></a>
+		</div>
+		<div class="servic-items">
+			<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--_sk5cfBS--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/xndmxrfhliweofif9jty.png">
+			<h3 style="text-align:center; color:white;">Web Designer</h3>
+		<hr>
+	   <a href=""><button>View</button></a>
+		<a href="https://github.com/Abhishekprajapati0/Coders.Gyan"><button>Github</button></a>
+		</div>
+		<div class="servic-items">
+			<img src="https://mobilunity.com/wp-content/uploads/2018/01/hire-ui-developer-1200-x-628.png" >
+			<h3 style="text-align:center; color:white;">Teach</h3>
+		<hr>
+	   <a href=""><button>View</button></a>
+		<a href="https://github.com/Abhishekprajapati0/Learn---Code"><button>Github</button></a>
+		</div>
+	</div>
+
+	-------------------------servic------------------>
+
+	<h1 id="contact"   style="text-align: center; padding: 10px; color: white; font-family: sans-serif;font-weight: bold;" id="skill">ContactUs</h1>
+
+	<div class="contact">
+		<div class="contact-one">
+			<img src="https://petapixel.com/assets/uploads/2023/04/facebook-contact-support-featured.jpg">
+		</div>
+
+		<div class="contact-two">
+		<form onsubmit=" return submitform() ">
+	Name:
+	<input type="text" name="name" id="name" placeholder="Enter your name"><br><br>
+
+	LastName:
+	<input type="lastname" name="gmail" id="lastname"placeholder = "Enter your LastName"><br><br>
+
+	Email:
+	<input type="email" name="name" id="email" placeholder="Enter your Email"><br><br>
+
+	Mobile:
+	<input type="Mobile" name="Mobile" id="mobil" placeholder="Enter your mobile no"><br><br>
+
+	<input type="Submit" id="submit">
+	</form>
+		</div>
+		
+	</div>
+	<div class="last">
+		<h1 style="text-align:center; color: white; font-family:sans-serif; font-weight: bold;margin: 50px 0px;"><span style="color:yellow;">Creator@</span> <span style="color:pink;">Manoj</span><span style="color:green;">Ahirwar</span></h1>
+		<h4 style="text-align:center; padding:20px;"><span><a href="">Google</a></span><span><a href="https://www.linkedin.com/in/manoj-ahirwar-617782212/">LinkedIng</a></span><span><a href="https://github.com/manojahirwar2205">Github</a></span></h4>
+	</div>
+
+	<script>
+		 function submitform(){
+ 	var name = document.getElementById("name").value;
+ 	var lastname = document.getElementById("lastname").value;
+ 	var email= document.getElementById("email").value;
+ 	var mob = document.getElementById("mobil").value;
+
+ 	if(name == "" || lastname == "" || email == "" ||mob == ""){
+ 		alert("Please all filed mainetry");
+ 		return false ;
+ 	}else{
+
+        true;
+        alert("SeccseFully Submited:)")
+    }
+ }
+	</script>
+
+</body>
+</html>
